@@ -85,3 +85,30 @@ else:
             print("   ⚠️ Insufficient bowling data.")
 
         print("-" * 50)
+
+
+
+
+#additional features
+
+        
+# Batting model evaluation
+y_bat_pred = bat_model.predict(Xb_test)
+print("🏏 Batting Model:")
+print("MSE:", mean_squared_error(yb_test, y_bat_pred))
+print("R² Score:", r2_score(yb_test, y_bat_pred))
+
+# Bowling model evaluation
+y_bowl_pred = bowl_model.predict(Xw_test)
+print("\n🎯 Bowling Model:")
+print("MSE:", mean_squared_error(yw_test, y_bowl_pred))
+print("R² Score:", r2_score(yw_test, y_bowl_pred))
+
+
+
+
+
+
+
+
+        
